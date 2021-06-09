@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; }
+
+header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 95px;
+  background: #FFFFFF; }
+  header nav {
+    display: flex;
+    justify-content: space-between; }
+    header nav .header-logo {
+      width: 60px;
+      height: 60px;
+      transform: translate(-15px, 15px); }
+    header nav .header-icono {
+      transition: all 0.7s ease;
+      transform-origin: center;
+      margin-top: 15px;
+      margin-left: 15px; }
+    header nav .icono-active:active {
+      transform: rotate(360deg); }
+    header nav ul {
+      background: #0E0D0D;
+      opacity: 90%;
+      color: #FFFFFF;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 95px;
+      text-align: center;
+      transition: transform .6s ease; }
+      header nav ul li {
+        text-decoration: none;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 15px;
+        padding: 22px;
+        width: 100%;
+        transition: border .4s ease, transform .4s ease; }
+        header nav ul li:hover {
+          transform: translateY(2px);
+          background: #28B463; }
+        header nav ul li:active {
+          color: #9CAFC3; }
+      header nav ul a {
+        text-decoration: none;
+        color: #FFFFFF; }
+    header nav .active {
+      transform: translate(-1500px, 0); }
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 90px; }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      height: 90px;
+      align-items: center; }
+      header nav .header-logo {
+        margin-left: 156px;
+        transform: translate(0, 0); }
+      header nav .header-icono {
+        display: none; }
+      header nav ul {
+        background: #fff;
+        opacity: 1;
+        color: #0E0D0D;
+        width: 487px;
+        height: 80px;
+        position: static;
+        margin-right: 156px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        header nav ul li {
+          text-decoration: none;
+          font-family: "Montserrat Alternates", sans-serif;
+          font-size: 13px;
+          padding: 0px;
+          width: 800px;
+          display: inline;
+          letter-spacing: 0;
+          font-weight: 700;
+          display: inline-block;
+          color: #0E0D0D;
+          cursor: pointer; }
+          header nav ul li:hover {
+            background: #FFFFFF;
+            border-bottom: thick solid #28B463; }
+          header nav ul li::after {
+            width: 0px;
+            height: 0px; }
+        header nav ul .firsLi {
+          min-width: 160px; }
+        header nav ul .firsLi::after {
+          width: 0px;
+          height: 0px; }
+        header nav ul .fourLi {
+          display: inline; }
+      header nav .active {
+        transform: translate(0, 0px); } }
+main {
+  transform: translate(0, 100px);
+  font-family: "Montserrat Alternates", sans-serif; }
+  main .banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    background: #28b463;
+    background: linear-gradient(164deg, #28b463 0%, #0e0d0d 100%); }
+    main .banner .texto {
+      padding: 50px;
+      padding-top: 70px; }
+      main .banner .texto h1 {
+        font-family: "Domine", serif;
+        color: #FFF;
+        font-weight: 500;
+        font-size: 40px;
+        text-align: center; }
+    main .banner .icono {
+      align-self: center; }
+      main .banner .icono i {
+        color: #47C856;
+        margin-left: 13%; }
+      main .banner .icono h2 {
+        color: #47C856; }
+    main .banner .custom-shape-divider-bottom-1623132848 {
+      position: absolute;
+      left: 0;
+      top: 450px;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0; }
+    main .banner .custom-shape-divider-bottom-1623132848 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 153px; }
+    main .banner .custom-shape-divider-bottom-1623132848 .shape-fill {
+      fill: #FFFFFF; }
+  main .Sobre_Mi .Sobre_Mi_tittle {
+    text-align: center;
+    padding-bottom: 50px; }
+  main .Sobre_Mi .Foto_Texto {
+    display: block; }
+    main .Sobre_Mi .Foto_Texto .foto {
+      width: 40%;
+      height: 50%;
+      margin-left: 30%;
+      border-radius: 20px; }
+    main .Sobre_Mi .Foto_Texto .texto {
+      padding-left: 60px;
+      padding-right: 60px;
+      text-align: justify;
+      margin-top: 50px; }
+  main .Servicios .Servicios_tittle {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px; }
+  main .Servicios .Servicios_items {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    main .Servicios .Servicios_items .e_comerce,
+    main .Servicios .Servicios_items .Responsive_desing {
+      margin-left: 15%;
+      margin-right: 15%; }
+      main .Servicios .Servicios_items .e_comerce p,
+      main .Servicios .Servicios_items .Responsive_desing p {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        text-align: justify; }
+      main .Servicios .Servicios_items .e_comerce .e_commerce_tittle_item,
+      main .Servicios .Servicios_items .e_comerce .Responsive_desing_tittle_item,
+      main .Servicios .Servicios_items .Responsive_desing .e_commerce_tittle_item,
+      main .Servicios .Servicios_items .Responsive_desing .Responsive_desing_tittle_item {
+        margin: auto;
+        align-self: center;
+        background: #28B463;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px; }
+        main .Servicios .Servicios_items .e_comerce .e_commerce_tittle_item h2,
+        main .Servicios .Servicios_items .e_comerce .Responsive_desing_tittle_item h2,
+        main .Servicios .Servicios_items .Responsive_desing .e_commerce_tittle_item h2,
+        main .Servicios .Servicios_items .Responsive_desing .Responsive_desing_tittle_item h2 {
+          text-align: center;
+          align-items: center;
+          color: #FFF;
+          padding-top: 60px; }
+        main .Servicios .Servicios_items .e_comerce .e_commerce_tittle_item i,
+        main .Servicios .Servicios_items .e_comerce .Responsive_desing_tittle_item i,
+        main .Servicios .Servicios_items .Responsive_desing .e_commerce_tittle_item i,
+        main .Servicios .Servicios_items .Responsive_desing .Responsive_desing_tittle_item i {
+          padding: 28%;
+          color: #FFF;
+          transform: translate(0, -40px); }
+  main .Proyectos {
+    animation: ease 1s;
+    display: inline-block;
+    background: #28b463;
+    background: linear-gradient(164deg, #28b463 0%, #0e0d0d 100%);
+    padding-bottom: 168px; }
+    main .Proyectos .custom-shape-divider-top-1623136795 {
+      position: relative;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0; }
+    main .Proyectos .custom-shape-divider-top-1623136795 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 68px; }
+    main .Proyectos .custom-shape-divider-top-1623136795 .shape-fill {
+      fill: #FFFFFF; }
+    main .Proyectos .custom-shape-divider-bottom-1623137120 {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: translate(0, 100px); }
+    main .Proyectos .custom-shape-divider-bottom-1623137120 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 68px; }
+    main .Proyectos .custom-shape-divider-bottom-1623137120 .shape-fill {
+      fill: #FFFFFF; }
+    main .Proyectos .Proyectos_tittle {
+      text-align: center;
+      padding-bottom: 50px;
+      padding-top: 50px; }
+    main .Proyectos .botones {
+      position: relative;
+      font-size: 40px;
+      cursor: pointer;
+      width: 70px;
+      width: 70px;
+      line-height: 70px;
+      background: #47C856;
+      border-radius: 50%;
+      text-align: center;
+      color: #FFF; }
+      main .Proyectos .botones:hover {
+        transform: scale(1.1, 1.1); }
+    main .Proyectos .atras {
+      left: 2%;
+      top: 290px; }
+    main .Proyectos .adelante {
+      top: 220px;
+      right: -85%; }
+    main .Proyectos .contenedor {
+      border-radius: 10px;
+      border: 4px solid #47C856;
+      width: 66%;
+      margin-left: 16%;
+      margin-top: -120px;
+      background: #FFF; }
+      main .Proyectos .contenedor:hover {
+        transform: scale(1.01, 1.01); }
+      main .Proyectos .contenedor h2 {
+        text-align: center;
+        margin: 2%; }
+      main .Proyectos .contenedor img {
+        padding-top: 20px;
+        width: 90%;
+        border-radius: 10px;
+        margin-left: 5%; }
+      main .Proyectos .contenedor p {
+        text-align: justify;
+        margin: 5%; }
+      main .Proyectos .contenedor .btn_demo_repo a {
+        display: flex;
+        text-align: center;
+        background: #47C856;
+        text-decoration: none;
+        color: #FFF;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 50px;
+        width: 50%;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 25%; }
+  main .Contacto .Contacto_tittle {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px; }
+  main .Contacto form {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-content: center; }
+    main .Contacto form .form {
+      height: 400px; }
+      main .Contacto form .form .grupo {
+        position: relative;
+        margin: 45px; }
+        main .Contacto form .form .grupo input {
+          background: none;
+          font-size: 18px;
+          display: block;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid #0E0D0D; }
+          main .Contacto form .form .grupo input:focus {
+            outline: none; }
+          main .Contacto form .form .grupo input:focus ~ label, main .Contacto form .form .grupo input:valid ~ label {
+            top: -20px;
+            font-size: 12px;
+            color: #28B463; }
+          main .Contacto form .form .grupo input:focus ~ .barra::before, main .Contacto form .form .grupo input:valid ~ .barra::before {
+            width: 100%; }
+        main .Contacto form .form .grupo label {
+          font-size: 16px;
+          position: absolute;
+          left: 5px;
+          top: 0px;
+          transition: 0.5s ease all;
+          pointer-events: none; }
+        main .Contacto form .form .grupo .barra {
+          position: relative;
+          display: block;
+          width: 100%; }
+          main .Contacto form .form .grupo .barra::before {
+            content: '';
+            height: 2px;
+            width: 0%;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            background: #28B463;
+            transition: 0.3s ease width; }
+      main .Contacto form .form button {
+        background: #28B463;
+        color: #FFF;
+        border: none;
+        border-radius: 50px;
+        width: 50%;
+        height: 50px;
+        margin-left: 25%; }
+
+@media screen and (min-width: 1024px) {
+  main .Sobre_Mi .Foto_Texto {
+    display: flex;
+    justify-content: space-between; }
+    main .Sobre_Mi .Foto_Texto .foto {
+      width: 40%;
+      height: 50%;
+      max-width: 300px;
+      max-height: 400px;
+      margin-left: 15%;
+      border-radius: 20px; }
+    main .Sobre_Mi .Foto_Texto .texto {
+      text-align: justify; }
+  main .Servicios .Servicios_items {
+    display: flex;
+    flex-direction: row;
+    text-align: center; }
+    main .Servicios .Servicios_items .e_comerce,
+    main .Servicios .Servicios_items .Responsive_desing {
+      margin-left: 0;
+      margin-right: 0; }
+      main .Servicios .Servicios_items .e_comerce p,
+      main .Servicios .Servicios_items .Responsive_desing p {
+        margin-top: 60px;
+        margin-left: 80px;
+        margin-right: 80px;
+        text-align: justify; }
+      main .Servicios .Servicios_items .e_comerce .e_commerce_tittle_item,
+      main .Servicios .Servicios_items .e_comerce .Responsive_desing_tittle_item,
+      main .Servicios .Servicios_items .Responsive_desing .e_commerce_tittle_item,
+      main .Servicios .Servicios_items .Responsive_desing .Responsive_desing_tittle_item {
+        margin: auto;
+        align-self: center;
+        background: #28B463;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px; }
+        main .Servicios .Servicios_items .e_comerce .e_commerce_tittle_item h2,
+        main .Servicios .Servicios_items .e_comerce .Responsive_desing_tittle_item h2,
+        main .Servicios .Servicios_items .Responsive_desing .e_commerce_tittle_item h2,
+        main .Servicios .Servicios_items .Responsive_desing .Responsive_desing_tittle_item h2 {
+          text-align: center;
+          align-items: center;
+          color: #FFF;
+          padding-top: 60px; }
+        main .Servicios .Servicios_items .e_comerce .e_commerce_tittle_item i,
+        main .Servicios .Servicios_items .e_comerce .Responsive_desing_tittle_item i,
+        main .Servicios .Servicios_items .Responsive_desing .e_commerce_tittle_item i,
+        main .Servicios .Servicios_items .Responsive_desing .Responsive_desing_tittle_item i {
+          padding: 28%;
+          color: #FFF;
+          transform: translate(0, -40px); } }
+
+/*# sourceMappingURL=style.css.map */
